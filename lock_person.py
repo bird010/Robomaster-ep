@@ -102,7 +102,7 @@ if __name__ == '__main__':
             cv2.imshow("Person Detection", frame)
 
             # Calculate the error from the center
-            error_x = float(x) - 0.5
+            error_x = float(x_w_max) - 0.5
             if abs(error_x) > 0.05:
                 if(ep_status.get_front_dist() < 700):
                     # Rotate only
